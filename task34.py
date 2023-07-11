@@ -14,6 +14,6 @@ str = 'пара-ра-рам рам-пам-папам па-ра-па-дам'.spli
 result = set()
 
 for i in str:
-    result.add(sum(list(map(lambda x: sum(1 for letter in x if letter in 'аеёиЙоуыэюя'), i))))
+    result.add(sum(list(map(lambda x: sum(1 for letter in x if letter in 'аеёийоуыэюя'), i))))
 
 print('Парам пам-пам' if len(result) == 1 else 'Пам парам')
